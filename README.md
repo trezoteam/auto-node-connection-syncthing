@@ -1,0 +1,1 @@
+# auto-node-connection-syncthing
