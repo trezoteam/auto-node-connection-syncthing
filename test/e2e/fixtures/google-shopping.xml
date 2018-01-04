@@ -1,0 +1,22 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0" version="1">
+	<channel>
+		<item>
+			<g:id>27</g:id>
+			<g:title>Placa Mãe Asus H81M-C/BR, chipset H81, LGA 1150</g:title>
+			<g:description>PLACA MÃE - Asus H81M-C/BR chipset H81 2 x DIMM, Max. 16GB, 1600/1333/1066 MHz 2 x SATA 3Gb/s 2 x SATA 6Gb/s Pichau Info As Melhores Marcas com Menor Preço</g:description>
+			<g:gtin>4716659566823</g:gtin>
+			<g:brand>Asus</g:brand>
+			<g:mpn>90MB0HBO-C1BAYO</g:mpn>
+			<g:product_url>https://www.pichau.com.br/placa-m-e-asus-h81m-c-br-chipset-h81-lga-1150-box</g:product_url>
+			<g:image_link>https://www.pichau.com.br/media/catalog/product/1/_/1_6.jpg</g:image_link>
+			<g:availability>in stock</g:availability>
+			<g:condition>new</g:condition>
+			<g:is_bundle>false</g:is_bundle>
+			<g:item_group_id>27</g:item_group_id>
+			<g:google_product_category>289</g:google_product_category>
+			<g:product_type>Hardware &gt; Placa Mãe</g:product_type>
+			<g:price>275.91 BRL</g:price>
+			<g:sale_price>275.91 BRL</g:sale_price>	
+		</item>
+	</channel>
+</feed>

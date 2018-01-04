@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  syncthing:
+    container_name: syncthing
+    build:
+      context: .
+      dockerfile: ./docker/syncthing/Dockerfile
+    links:
+      - add_syncthing_to_master
+    restart: always
+    ports:
+      - "8384:8384"
+      - "22000:22000"
+      - "21027:21027/udp"
+    volumes:
+      - "./config:/home/syncthing/.config/syncthing"
+      - "./data:/home/syncthing/Sync"
+  add_syncthing_to_master:
+    build:
+      context: .
+      dockerfile: ./docker/node/Dockerfile
+    container_name: add_syncthing_to_master
+    environment:
+      - PORT=8080
+      - NODE_ENV=dev
+      - ENV_NAME=local
+      - SYNCTHING_HOST=syncthing
+    volumes:
+      - ./src:/opt/app/src
+      - ./package.json:/opt/app/package.json
+      - ./test:/opt/app/test
+      - ./config-json:/opt/app/config
+volumes:
+  config:
+    driver: local
+  data:
+    driver: local
