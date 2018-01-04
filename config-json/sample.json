@@ -1,0 +1,39 @@
+{
+	"Syncthing": {
+		"node": {
+			"headers": {
+				"User-Agent": "request",
+				"content-type": "application/json",
+				"x-api-key": "{Api token local}"
+			}
+		},
+		"master": {
+			"headers": {
+				"User-Agent": "request",
+				"content-type": "application/json",
+				"x-api-key": "{Api token do master}"
+			}
+		},
+		"masterConfigUrl": "{url do admin do master}:8384/rest/system/config",
+		"masterDiscoveryUrl": "{url do admin do master}:8384/rest/system/discovery"
+	},
+	"BaseNodeConfig": {
+		"deviceID": "{Device Id do Master}",	
+		"addresses":[  
+			"dynamic"
+		],
+		"compression":"metadata",
+		"certName":"",
+		"introducer":true,
+		"skipIntroductionRemovals":false,
+		"introducedBy":"",
+		"paused":false,
+		"allowedNetworks":[  
+
+		],
+		"autoAcceptFolders":true,
+		"_addressesStr":"dynamic",
+		"selectedFolders": {"default": true},
+		"$$hashKey": "0DF"
+	}
+}
